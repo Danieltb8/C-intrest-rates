@@ -1,0 +1,41 @@
+using namespace std;
+
+
+int main() {
+    double netBalance;
+    double payment;
+    double d2;
+    double d1;
+    double averageDailyBalance;
+    double interestRate;
+    double interest;
+
+cout << setprecision(2) << fixed << showpoint;
+cout << ("enter your net balance: ") ;
+    cin >> netBalance;
+
+
+cout << "enter the number of days in your billing cycle: ";
+cin >> d1;
+
+
+cout << " How much payed: ";
+cin >> payment;
+
+
+cout << "Enter the number of days payment is made before billing cycle:";
+cin >> d2;  
+
+    cout << "what is your interest rate?" ;
+cin >> interestRate;
+
+
+   averageDailyBalance = (netBalance * d1 - payment * d2)/d1;
+    interest = averageDailyBalance * interestRate;
+ 
+cout << "your intrest gained over time is:";
+cout << interest ;
+
+
+    return 0;
+}
